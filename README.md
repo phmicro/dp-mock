@@ -18,8 +18,8 @@ Use `Redux Dev Tools` from eg. Google Chrome Addon Store to debug ngrx
 
 ## Folder Structure
 
-(table\stuff\chart.drawio.png)
+![image info](./stuff/chart.drawio.png)
 
 ## NGRX Structure
 
-(table\stuff\dia.PNG)
+![image info](./stuff/dia.png)

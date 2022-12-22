@@ -1,0 +1,21 @@
+<ng-container *ngIf="dataSource">
+    <button mat-button color="primary" *ngIf="!cleared" (click)="resetTable()">Clear Table</button>
+    <button mat-button color="warn" *ngIf="cleared" (click)="restoreTable()">restore Table</button>
+    <!-- {{dataSource | json}} -->
+    <table mat-table [dataSource]="dataSource" class="mat-elevation-z8">
+        <ng-container matColumnDef="id">
+            <th mat-header-cell *matHeaderCellDef> No. </th>
+            <td mat-cell *matCellDef="let assignment"> {{assignment.id}} </td>
+        </ng-container>
+
+
+        <ng-container matColumnDef="description">
+            <th mat-header-cell *matHeaderCellDef> Descripton </th>
+            <td mat-cell *matCellDef="let assignment"> {{assignment.description}} </td>
+        </ng-container>
+
+        <tr mat-header-row *matHeaderRowDef="displayedColumns"></tr>
+        <tr mat-row *matRowDef="let row; columns: displayedColumns;"></tr>
+    </table> 
+</ng-container>
+

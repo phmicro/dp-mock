@@ -1,0 +1,20 @@
+<br><br>
+<ng-container> <!--  *ngIf="fakeData$ | async as fakeData" -->
+    <form   (ngSubmit)="saveForm()"
+            [formGroup]="form">
+        <fieldset>
+            <label>ID</label>
+            <input  id="inputId"
+                    type="text"
+                    formControlName="id"/>
+        </fieldset>    
+        <fieldset>
+            <label>Description</label>
+            <input  id="inputDescription"
+                    type="text"
+                    formControlName="description"/>
+        </fieldset> 
+        <button mat-flat-button color="accent" type="submit">Submit</button>
+    </form>
+    
+</ng-container>

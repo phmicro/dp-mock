@@ -1,0 +1,12 @@
+<br>
+<ng-container *ngIf="testData$ | async as testData">
+    <!-- {{ testData | json }} -->
+    <app-table  [dataSource]="testData"
+        (resetTableEvent)="resetTable()"
+        (restoreTableEvent)="restoreTable()"
+    ></app-table>
+    <app-edit></app-edit>
+</ng-container>
+
+
+

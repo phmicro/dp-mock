@@ -22,4 +22,4 @@ Use `Redux Dev Tools` from eg. Google Chrome Addon Store to debug ngrx
 
 ## NGRX Structure
 
-![image info](./stuff/dia.png)
+![image info](./stuff/dia.PNG)
